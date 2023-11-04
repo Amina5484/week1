@@ -1,8 +1,8 @@
 public class Person {
-    private int id;
-    private String name="unkown";
-    private int age;
-    private boolean parent_Permission=true;
+     int id;
+     String name="unkown";
+     int age;
+     boolean parent_Permission=true;
 
 
     public Person( String name, int age, boolean parent_Permission) {

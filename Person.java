@@ -1,13 +1,13 @@
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Person implements Nameable {
     int id;
     String name="unkown";
-    int age;
-    boolean parent_Permission=true;
-
-
+  int age;
+  boolean parent_Permission=true;
+    
     public Person( String name, int age, boolean parent_Permission) {
         this.name = name;
         this.age = age;

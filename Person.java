@@ -1,4 +1,7 @@
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Person implements Nameable {
     int id;
     String name="unkown";
@@ -41,5 +44,19 @@ public class Person implements Nameable {
     @Override
     public String getCorrectName() {
         return name;
+    }
+    private List<Rental> rentals;
+
+    public Person(String name) {
+        this.name = name;
+        this.rentals = new ArrayList<>();
+    }
+
+    public List<Rental> getRentals() {
+        return rentals;
+    }
+
+    public void addRental(Rental rental) {
+        rentals.add(rental);
     }
 }

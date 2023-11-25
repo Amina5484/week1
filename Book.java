@@ -35,4 +35,8 @@ public class Book {
         rentals.add(rental);
 
     }
+
+    public int getId() {
+        return 0;
+    }
 }

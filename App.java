@@ -127,7 +127,6 @@ public   class App {
         }
         return null;
     }
-
     public static Book findBookByTitle(String title) {
         for (Book book : books) {
             if (book.getTitle().equalsIgnoreCase(title)) {
@@ -135,6 +134,5 @@ public   class App {
             }
         }
         return null;
-
     }
 }

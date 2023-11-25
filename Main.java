@@ -9,7 +9,7 @@ public class Main {
         boolean quit = false;
         App app = new App();
         while (!quit) {
-            System.out.println("*********************************");
+            System.out.println("*******wellcome to our project*********");
             System.out.println("Choose an option:");
             System.out.println("1. List all books");
             System.out.println("2. List all people");
@@ -50,5 +50,4 @@ public class Main {
             }
         }
     }
-
 }

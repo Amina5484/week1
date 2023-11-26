@@ -5,6 +5,7 @@ public class Rental {
 
     public Rental(Book book,Person person) {
         this.book = book;
+
         this.person = person;
     }
 
@@ -12,7 +13,8 @@ public class Rental {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(String date)
+    {
         this.date = date;
     }
 

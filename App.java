@@ -40,7 +40,7 @@ public   class App {
         boolean parentPermission = scanner.nextBoolean();
         scanner.nextLine();
 
-
+// equalsIgnoreCase() is used in programming to compare two strings while ignoring their case sensitivity.
         if (personType.equalsIgnoreCase("teacher")) {
             System.out.print("Enter teacher's specialization: ");
             String specialization = scanner.nextLine();
@@ -79,7 +79,7 @@ public   class App {
 
         Person person = findPersonById(personId);
         if (person == null) {
-            System.out.println("Person not found.");
+            System.out.println("Person is not found.");
             return;
         }
 
@@ -88,13 +88,13 @@ public   class App {
 
         Book book = findBookByTitle(title);
         if (book == null) {
-            System.out.println("Book not found.");
+            System.out.println("Book is not found.");
             return;
         }
 
         Rental rental = new Rental(book, person);
         rentals.add(rental);
-        System.out.println("Rental created successfully.");
+        System.out.println("Rental is created successfully.");
     }
 
     public static void listRentalsForPerson() {

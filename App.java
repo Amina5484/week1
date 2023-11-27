@@ -116,8 +116,11 @@ public   class App {
                 System.out.println(rental.getBook().getTitle() + " by " + rental.getBook().getAuthor());
                 rentalsFound = true;
             }
+            else{
+                System.out.println("No rentals found for the person.");
+            }
         }
-        System.out.println("No rentals found for the person.");
+
     }
     public static Person findPersonById(int personId) {
         for (Person person : people) {

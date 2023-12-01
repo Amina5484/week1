@@ -1,30 +1,29 @@
 public class Rental {
- private String date;
- private Book book;
- private Person person;
+    private String date;
+    private Book book;
+    private Person person;
 
- public Rental(String date, Book book, Person person) {
-  this.date = date;
-  this.book = book;
-  this.person = person;
-  book.addRental(this);
-  person.addRental(this);
- }
+    public Rental(Book book,Person person) {
+        this.book = book;
 
- public String getDate() {
-  return date;
- }
+        this.person = person;
+    }
 
- public void setDate(String date) {
-  this.date = date;
- }
+    public String getDate() {
+        return date;
+    }
 
- public Book getBook() {
-  return book;
- }
+    public void setDate(String date)
+    {
+        this.date = date;
+    }
 
- public Person getPerson() {
-  return person;
- }
+    public Book getBook() {
+        return book;
+    }
+
+    public Person getPerson() {
+        return person;
+    }
 
 }

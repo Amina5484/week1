@@ -5,11 +5,20 @@ import java.util.List;
 public class Person implements Nameable {
     int id;
     String name="unkown";
+
+    int age;
+    boolean parent_Permission=true;
+
+
+    public Person( String name,int age, boolean parent_Permission) {
+
   int age;
   boolean parent_Permission=true;
     
     public Person( String name, int age, boolean parent_Permission) {
+
         this.name = name;
+        this.id=(int) (Math.random() * 10000000);
         this.age = age;
         this.parent_Permission = parent_Permission;
     }

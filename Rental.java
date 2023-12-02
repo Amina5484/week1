@@ -1,21 +1,15 @@
-public class Rental {
-    private String date;
+class Rental {
     private Book book;
     private Person person;
 
-    public Rental(String date,Book book,Person person) {
+
+    String date;
+
+    public Rental(Book book, Person person) {
         this.book = book;
-        this.date = date;
         this.person = person;
-        book.addRental(this);
-        person.addRental(this);
-
 
     }
-    public String getDate() {
-        return date;
-    }
-
 
     public Book getBook() {
         return book;
@@ -24,5 +18,5 @@ public class Rental {
     public Person getPerson() {
         return person;
     }
-
 }
+//rental class

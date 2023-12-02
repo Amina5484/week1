@@ -41,7 +41,7 @@ public class Main {
     }
 
     private static void printMenu() {
-        System.out.println("******* Welcome to our project *******");
+        System.out.println("******* Library ****************");
         System.out.println("Choose an option:");
         System.out.println("1. List all books");
         System.out.println("2. List all people");

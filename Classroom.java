@@ -22,7 +22,7 @@ public class Classroom {
     }
 
     public void addStudent(Student student) {
-        student.setClassroom(this);
+        student.setClassroom(String.valueOf(this));
         students.add(student);
     }
 }

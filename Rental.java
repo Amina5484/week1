@@ -3,20 +3,19 @@ public class Rental {
     private Book book;
     private Person person;
 
-    public Rental(Book book,Person person) {
+    public Rental(String date,Book book,Person person) {
         this.book = book;
-
+        this.date = date;
         this.person = person;
-    }
+        book.addRental(this);
+        person.addRental(this);
 
+
+    }
     public String getDate() {
         return date;
     }
 
-    public void setDate(String date)
-    {
-        this.date = date;
-    }
 
     public Book getBook() {
         return book;

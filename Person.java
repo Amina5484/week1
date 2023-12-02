@@ -3,22 +3,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Person implements Nameable {
-    int id;
+    int id ;
     String name="unkown";
 
     int age;
     boolean parent_Permission=true;
 
 
-    public Person( String name,int age, boolean parent_Permission) {
-
-  int age;
-  boolean parent_Permission=true;
-    
-    public Person( String name, int age, boolean parent_Permission) {
+    public Person( String name,int age,int id, boolean parent_Permission) {
 
         this.name = name;
-        this.id=(int) (Math.random() * 10000000);
+        this.id= id;
         this.age = age;
         this.parent_Permission = parent_Permission;
     }
@@ -67,5 +62,6 @@ public class Person implements Nameable {
 
     public void addRental(Rental rental) {
         rentals.add(rental);
+
     }
 }
